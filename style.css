@@ -9,7 +9,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
    background: rgb(94,60,222);
-background: radial-gradient(circle, rgba(94,60,222,1) 0%, rgba(224,67,99,1) 100%); 
+background: radial-gradient(circle, rgba(94,60,222,1) 0%, rgba(224,67,99,1) 100%);
 }
 
 header {
@@ -75,12 +75,12 @@ header {
   padding: 0;
   display: block;
   width: 2.15rem;
-  height: 2.4rem;
+  height: 4.15rem;
   background: #eee;
   border-radius: 0.25rem;
   border: 1px solid #888;
   color: #000;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .key:hover {
   box-shadow: 0 0 0 0.1rem currentColor;
