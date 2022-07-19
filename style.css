@@ -10,6 +10,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
    background: rgb(94,60,222);
 background: radial-gradient(circle, rgba(94,60,222,1) 0%, rgba(224,67,99,1) 100%);
+color: #2e3b9b;
 }
 
 #bgCanvas {
@@ -93,7 +94,7 @@ header {
   background: #eee;
   border-radius: 0.25rem;
   border: 1px solid #888;
-  color: #000;
+  color: #2e3b9b;
   font-size: 1.3rem;
 }
 .key:hover {
