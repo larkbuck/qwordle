@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QWORDLE</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" type="module"></script>
-  </head>
-  <body>
-    <div class="app">
-      <header><h1>Q W O R D L E</h1><h4>
-         <em>gay for word games</em>
-        </h4></header>
 
-      <div class="board"></div>
-      <!-- <div class="feedback"></div> -->
-      <div class="keyboard"></div>
-      <br />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QWORDLE</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="app.js" type="module"></script>
+  <script src="js/p5background.js" type="text/javascript"></script>
+  <script src="js/triangles.js" type="text/javascript"></script>
+  <script src="js/p5foreground.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="bgCanvas">
+  </div>
+  <div class="canvasDiv">
+    <div id="overlayCanvas">
     </div>
-  </body>
+  </div>
+
+  <div class="app">
+    <header>
+      <h1>Q W O R D L E</h1>
+      <h4>
+        <em>gay for word games</em>
+      </h4>
+    </header>
+
+    <div class="board"></div>
+    <!-- <div class="feedback"></div> -->
+    <div class="keyboard"></div>
+    <br />
+  </div>
+</body>
+
 </html>

@@ -12,6 +12,20 @@ body {
 background: radial-gradient(circle, rgba(94,60,222,1) 0%, rgba(224,67,99,1) 100%);
 }
 
+#bgCanvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -3;
+}
+
+#overlayCanvas {
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
 header {
   text-align: center;
   color: #eee;

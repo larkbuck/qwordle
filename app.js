@@ -71,6 +71,7 @@ async function startGame({ word, kb, board, words }) {
     kb.revealHint(guess, hints);
     if (guess.join('') === word) {
       // $(".feedback").innerText = `Correct.`;
+      win = true;
       // END SCREEN HERE
       return;
     }
