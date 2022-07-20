@@ -24,7 +24,7 @@ function Particle(x, y, hu, firework) {
   this.update = function() {
     if (!this.firework) {
       this.vel.mult(0.9);
-      this.lifespan -= 4;
+      this.lifespan -= 2;
     }
     this.vel.add(this.acc);
     this.pos.add(this.vel);
