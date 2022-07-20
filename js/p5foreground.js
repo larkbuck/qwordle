@@ -1,4 +1,7 @@
 let win = false;
+let lose = false;
+let word = "";
+
 
 
 let canvasDivInstance = function(p) { // p could be any variable name
@@ -21,6 +24,11 @@ let canvasDivInstance = function(p) { // p could be any variable name
       // p.text(canvasWidth / 3, canvasHeight / 6);
       // p.ellipse(canvasWidth / 2, canvasHeight / 2, 100);
       p.text('YES', canvasWidth / 2, canvasHeight / 2);
+    }
+
+    if (lose) {
+      p.text(`Nope, answer: ${word}`, canvasWidth / 2, canvasHeight / 2);
+
     }
   };
 

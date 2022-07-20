@@ -2,6 +2,7 @@ const $ = (s, e = document.body) => e.querySelector(s);
 const $$ = (s, e = document.body) => [...e.querySelectorAll(s)];
 const wait = (ms) => new Promise((done) => setTimeout(done, ms));
 const date = new Date(Date.now());
+// let word = "";
 
 const dom = (tag, attrs, ...children) => {
   const el = document.createElement(tag);
@@ -42,7 +43,7 @@ async function init() {
   const words = (await dictionaryRequest).split("\n");
   const answerArray = (await answersRequest).split("\n");
   // const word = answerArray[(Math.random() * answerArray.length) | 0] // pulls random
-  const word = answerArray[date.getDate() - 1 | 0]
+  word = answerArray[date.getDate() - 1 | 0]
 
   console.log("word: " + word);
   // console.log("date: " + date.getDate());
@@ -81,6 +82,7 @@ async function startGame({ word, kb, board, words }) {
     }
   }
   // $(".feedback").innerText = `GAME OVER\nCorrect Answer was: ${word}`;
+  lose = true;
 }
 
 function collectGuess({ kb, board, round, words }) {
