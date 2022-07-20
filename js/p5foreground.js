@@ -1,4 +1,4 @@
-let win = true;
+let win = false;
 let lose = false;
 let word = "";
 // fireworks
