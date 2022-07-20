@@ -1,6 +1,7 @@
 const $ = (s, e = document.body) => e.querySelector(s);
 const $$ = (s, e = document.body) => [...e.querySelectorAll(s)];
 const wait = (ms) => new Promise((done) => setTimeout(done, ms));
+const date = new Date(Date.now());
 
 const dom = (tag, attrs, ...children) => {
   const el = document.createElement(tag);
@@ -28,7 +29,7 @@ const ROUNDS = 6;
 const LENGTH = 5 ;
 
 const dictionaryRequest = fetch("/dictionary.txt").then((r) => r.text());
-const swearRequest = fetch("/words.txt").then((ra) => ra.text());
+const answersRequest = fetch("/words.txt").then((ra) => ra.text());
 const board = $(".board");
 const keyboard = $(".keyboard");
 
@@ -39,9 +40,12 @@ async function init() {
   const kb = generateKeyboard();
 
   const words = (await dictionaryRequest).split("\n");
-  const cusses = (await swearRequest).split("\n");
-  const word = cusses[(Math.random() * cusses.length) | 0]
+  const answerArray = (await answersRequest).split("\n");
+  // const word = answerArray[(Math.random() * answerArray.length) | 0] // pulls random
+  const word = answerArray[date.getDate() - 1 | 0]
+
   console.log("word: " + word);
+  // console.log("date: " + date.getDate());
 
   await startGame({ word, kb, board, words });
 }
