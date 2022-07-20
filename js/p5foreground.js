@@ -13,7 +13,7 @@ let canvasDivInstance = function(p) { // p could be any variable name
   p.setup = function() {
     p.canvas = p.createCanvas(canvasWidth, canvasHeight);
     p.canvas.parent('overlayCanvas');
-    p.textSize(64);
+    p.textSize(48);
     p.textAlign(CENTER, CENTER);
     p.textFont("Helvetica");
     // p.colorMode(HSB, 100);
