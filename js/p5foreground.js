@@ -26,7 +26,7 @@ let canvasDivInstance = function(p) { // p could be any variable name
 
     if (win) {
       // p.background(213, 66, 109, 2);
-      p.background(129, 62, 188, 1.7);
+      p.background(129, 62, 188, 1.6);
       p.fill(255);
 
       p.text(
@@ -43,7 +43,7 @@ VERY GAY`, 20, 20, canvasWidth - 20, canvasHeight - 20);
 
     if (lose) {
       // p.background(213, 66, 109, 2);
-      p.background(129, 62, 188, 1.7);
+      p.background(129, 62, 188, 1.6);
       p.fill(255);
 
       p.text(
