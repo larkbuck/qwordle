@@ -12,7 +12,7 @@ let canvasWidth;
 
 function setup() {
 
-  canvasHeight = windowWidth;
+  canvasHeight = windowHeight;
   canvasWidth = windowWidth;
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('bgCanvas');
